@@ -1,0 +1,3 @@
+Place the follwing JARs into this directory:
+- org.unclesniper.util.jar (https://github.com/UncleSniper/jusutil)
+- ogdl.jar (https://github.com/UncleSniper/jogdl)
