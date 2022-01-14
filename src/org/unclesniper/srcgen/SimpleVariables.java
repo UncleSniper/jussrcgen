@@ -19,6 +19,7 @@ public class SimpleVariables implements Variables {
 			variables.put(name, value);
 	}
 
+	@Override
 	public boolean isDefined(String name) {
 		return variables.containsKey(notNull(name, "name"));
 	}

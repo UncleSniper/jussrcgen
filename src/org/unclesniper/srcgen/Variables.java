@@ -4,4 +4,6 @@ public interface Variables {
 
 	String getVariable(String name) throws UndefinedVariableException;
 
+	boolean isDefined(String name);
+
 }

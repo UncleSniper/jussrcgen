@@ -4,6 +4,6 @@ import java.io.IOException;
 
 public interface Generator {
 
-	void generate(Variables variables) throws GenException, IOException;
+	void generate(GenConfig config, Variables variables) throws GenException, IOException;
 
 }
