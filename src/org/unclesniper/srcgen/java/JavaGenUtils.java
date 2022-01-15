@@ -7,8 +7,8 @@ import org.unclesniper.srcgen.GenException;
 
 import static org.unclesniper.util.ArgUtils.notNull;
 import static org.unclesniper.util.JavaUtils.isIdentifier;
-import static org.unclesniper.util.JavaUtils.isPackageName;
 import static org.unclesniper.util.PropertyUtils.requireSet;
+import static org.unclesniper.util.JavaUtils.isQualifiedName;
 
 public final class JavaGenUtils {
 
@@ -27,7 +27,7 @@ public final class JavaGenUtils {
 		String name = packageName == null ? null : packageName.getString(config, variables);
 		if(name == null || name.length() == 0)
 			return null;
-		if(!isPackageName(name))
+		if(!isQualifiedName(name))
 			throw new IllegalQualifiedNameException(name);
 		return name;
 	}
